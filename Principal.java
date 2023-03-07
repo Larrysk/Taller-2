@@ -6,6 +6,7 @@ public class Principal {
         frame.setSize(300, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JButton startButton = new JButton("Play Music");
+        startButton.setBackground(new java.awt.Color(250, 128, 114 ));
         startButton.addActionListener(e -> {
             for (int i = 0; i < 4; i++) {
                 Thread thread = new Thread(new ReproductorM(i));
